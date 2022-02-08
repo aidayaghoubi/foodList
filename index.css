@@ -1,0 +1,128 @@
+body{
+    background-color: #d3abab;
+}
+
+#main-container{
+    margin:3% 5%;
+    background-color: #Fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 21px;
+    -webkit-box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.15); 
+box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.15);
+}
+
+
+#serach-box{
+   
+   width: 100%;
+   padding: 5px 15px; 
+   display: flex;
+   justify-content: center;
+}
+#serach-input{
+    width: 98%;
+   height: 85px;
+   border: none;
+   margin-top: 25px;
+   background-color: #f5f5f5;
+   border-radius: 16px;
+   padding: 5px 15px;
+}
+.card{
+    flex-direction: row !important;
+    padding: 15px 15px;
+    margin:19px 33px;
+    background-color: #f5f5f5 !important;
+    border: none !important;
+    border-radius: 16px !important; 
+    margin-top: 25px;
+}
+.card img{
+    height: 343px;
+    border-radius: 16px;
+}
+.text-wrapper{
+    margin: 15px 32px;
+}
+#suggestion-item{
+   margin-top: 25px;
+    height: 200px;
+    width: 100%;
+    margin:65px 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seg-item img{
+    height: 105px;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 5px 12px 7px rgba(213,209,255,0.53); 
+    box-shadow: 1px 5px 12px 7px rgba(213,209,255,0.53);
+}
+.seg-item p{
+    margin-top: 15px;
+}
+.seg-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin: 0px 35px;
+}
+.instruc{
+    font-size: 17px;
+    opacity: 0.7;
+}
+.foodName{
+    font-weight: bold;
+}
+.title{
+    margin-top: 33px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+}
+.best-rated{
+    width: 408px;
+    height: 296px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 !important;
+}
+#offers-item{
+    display: flex;
+    flex-direction: row;
+}
+.offer-food-title{
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    bottom: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-food-title p{
+    padding:10px 21px ;
+    margin-bottom: 0px !important;
+    font-size: 22px;
+    font-weight: bold;
+}
+.best-rated img{
+width: 100%;
+height: auto;
+}
+/* .hide{
+    display: none !important;
+} */
+
+.show{
+    display: flex;
+}
