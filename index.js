@@ -50,25 +50,23 @@ searchForm.addEventListener('submit', e => {
 
 
 //random offerfood
-for (let i = 0; i <= seggestedItem.length; i++) {
 
+seggestedItem.forEach(el => {
     async function randomfood() {
         const res = await fetch(randomAPI);
         const response = await res.json();
         return response;
-    }
+    } 
     randomfood().then(response => {
         console.log(response)
         const { strMeal, strMealThumb } = response.meals[0];
-        seggestedItem[i].innerHTML = `
+      el.innerHTML = `
         <img src="${strMealThumb}" alt=""
         class="seg-pic-item">
-    <p class="food-title">${strMeal}</p>
+       <p class="food-title">${strMeal}</p>
         `
     });
-
-}
-
+});
 
 
 //random seefood
@@ -78,11 +76,11 @@ async function seafood() {
     return response;
 }
 
-for (let i = 0; i < 3; i++) {
+categoryOffer.forEach(el =>{
     seafood().then(response => {
         const rnd=Math.floor(Math.random(0,1)*25)
         const { strMealThumb, strMeal } = response.meals[rnd];
-        categoryOffer[i].innerHTML = `
+        el.innerHTML = `
         <img src='${strMealThumb}' alt="">
                     <div class="offer-food-title">
                         <p>${strMeal}</p>
@@ -91,4 +89,6 @@ for (let i = 0; i < 3; i++) {
         `;
 
     });
-}
+
+})
+
