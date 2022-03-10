@@ -92,3 +92,20 @@ categoryOffer.forEach(el =>{
 
 })
 
+// let textShouldPlay = '';
+// const text = document.getElementById('text_holder');
+
+// text.addEventListener('input' , e=>{
+//     textShouldPlay = e.target.value
+// })
+
+
+// const playVoice=document.getElementById('play_voice');
+// playVoice.addEventListener('click', e=>{
+//    const voice = new SpeechSynthesisUtterance();
+//    voice.lang = 'en-US';
+//    voice.text = textShouldPlay;
+//    voice.volume = 0.8;
+//    window.speechSynthesis.speak(voice)
+
+// })
